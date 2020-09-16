@@ -3,14 +3,14 @@ package com.company.devices;
 import com.company.Salleable;
 import com.company.creatures.human;
 
-public class car extends device {
+public abstract class car extends device {
     public String colour;
     public Double price;
     public String model;
     public String producer;
     public String typee;
 
-
+    public abstract String refuel();
 
     public String toString() {
         return producer + " " + model + " " + colour + " " + price + " " + typee;

@@ -6,7 +6,6 @@ public abstract class  device {
     public String yearOfProduction;
 
 
-
     public String toString(){
 
         return producer+" "+model+" "+yearOfProduction;

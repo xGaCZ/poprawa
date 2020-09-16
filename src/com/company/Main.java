@@ -6,6 +6,9 @@ import com.company.creatures.animal;
 import com.company.creatures.FarmAnimal;
 import com.company.creatures.Pet;
 import com.company.creatures.Feedable;
+import com.company.fuel.Electric;
+import com.company.fuel.LPG;
+import com.company.fuel.Diesel;
 import com.company.creatures.human;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -25,21 +28,21 @@ public class Main {
               animal.feed(); */
               human human = new human();
               //fura1\\
-              car golfica  = new car();
+              car golfica  = new LPG();
               golfica.model = "mk3";
               golfica.producer = "golfica kurwica coropration";
               golfica.colour ="butelkowa zielen";
               golfica.price = 999.0;
               golfica.typee = "hedzbek";
               //fura2\\
-              car pasat  = new car();
+              car pasat  = new Diesel();
               pasat.model = "b5";
               pasat.producer = "Pasat starego SA.";
               pasat.colour ="rudy";
               pasat.price = 2745.0;
               pasat.typee = "sedan";
               //fura3\\
-              car seat  = new car();
+              car seat  = new Electric();
               seat.model = "ibiza ";
               seat.producer = "SEAT";
               seat.colour ="blue";
