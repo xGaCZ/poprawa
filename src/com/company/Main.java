@@ -2,14 +2,20 @@ package com.company;
 
 import com.company.devices.car;
 import com.company.devices.phone;
-
+import com.company.creatures.animal;
+import com.company.creatures.FarmAnimal;
+import com.company.creatures.Pet;
+import com.company.creatures.Feedable;
+import com.company.creatures.human;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Main {
 
        public static void main(String[] args) {
-              animal animal = new animal("dog") ;
+              animal animal = new animal() {
+                     @Override
+                     public void feed(Double foodWeight) { }};
               animal.feed();
               animal.takeForAWalk();
           /**    animal.takeForAWalk();

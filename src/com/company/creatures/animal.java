@@ -1,22 +1,22 @@
-package com.company;
+package com.company.creatures;
 
 import com.company.Salleable;
-import com.company.human;
 
-public class animal {
-    final static Double pod_wag_psa =4.0;
-    final String species;
-    private Double weight;
-    public animal(String species) {
+public abstract class animal implements Feedable{
+    public static Double pod_wag_psa =4.0;
+    public String species;
+    public Double weight;
+    public animal(String species, Double weight) {
         this.species = species;
-        if(this.species == "dog"){
-            weight= pod_wag_psa;
+        this.weight = weight;}
+         public animal() {
+            this.weight = 20.0;
         }
-    }
+
     public String toString() {
         return species + " " + " " + weight;
     }
-    void feed(){
+  public  void feed(){
         if(weight<18) {
             weight += 3;
             System.out.println("ulał się o 3 kg");
@@ -26,7 +26,7 @@ public class animal {
             System.out.println("weź mnie wyprowadz bo zaraz zamiast psa bedzię świania");
         }
     }
-    void takeForAWalk(){
+  public  void takeForAWalk(){
         if(weight>0) {
             weight -= 3;
             System.out.println("odtyło mi sie 3 kg ");

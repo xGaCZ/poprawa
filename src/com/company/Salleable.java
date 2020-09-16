@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.human;
+import com.company.creatures.human;
 
 public interface Salleable {
 

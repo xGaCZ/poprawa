@@ -1,7 +1,7 @@
 package com.company.devices;
 
 import com.company.Salleable;
-import com.company.human;
+import com.company.creatures.human;
 
 public class car extends device {
     public String colour;

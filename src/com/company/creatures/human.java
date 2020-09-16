@@ -1,5 +1,6 @@
-package com.company;
+package com.company.creatures;
 
+import com.company.creatures.animal;
 import com.company.devices.car;
 import com.company.devices.phone;
 import java.time.ZonedDateTime;
@@ -19,7 +20,7 @@ public class human {
     public String toString() {
         return salary + " " + name;
     }
-    void addMyCar(car car) {
+  public  void addMyCar(car car) {
         this.car = car;
     }
     public  car getCar(){
